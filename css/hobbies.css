@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif, Tahoma;
+    --bg-primary: #FCFF6C;
+    --bg-secondary: #D7FFAB;
+    --font-color-primary: #22577a;
+    --font-color-secondary: #22577a;
+    --backup-color: #eae8ff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+header .button{
+    align-items: center;
+    flex-direction:column;
+    margin: 10px;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    background-color: brown;
+    border-radius: 100px;
+    color: white;
+    display: inline-block;
+    padding: 15px 20px;
+}
+
+header .button:hover {
+    background-color: aqua;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .hobbies{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+    padding: 50px;
+}
+
+main .hobbies h2{
+    font-size: 35px;
+}
+
+main .hobbies h3{
+    font-size: 25px;
+}
+
+main .books{
+    flex-direction: row;
+}
+
+main .books img{
+    width: 350px;
+    height: 350px;
+}
+
+main .sports img{
+    width: 500px;
+    height: 350px;
+}

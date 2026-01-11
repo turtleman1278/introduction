@@ -6,6 +6,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif, Tahoma;
+    --bg-primary: #FCFF6C;
+    --bg-secondary: #D7FFAB;
+    --font-color-primary: #22577a;
+    --font-color-secondary: #22577a;
+    --backup-color: #eae8ff;
 }
 
 header {
@@ -15,7 +20,7 @@ header {
 }
 
 header .name {
-    color:cadetblue;
+    color:var(--bg-primary);
     font-size: 70px; 
     margin: 40px;
 }
@@ -100,6 +105,14 @@ main .course-projects{
     margin-top: 60px;
 }
 
+main .continued{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    gap: 10px;
+}
 
 
 

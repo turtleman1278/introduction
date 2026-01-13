@@ -1,20 +1,25 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif, Tahoma;
-    --bg-primary: #FCFF6C;
-    --bg-secondary: #D7FFAB;
-    --font-color-primary: #22577a;
-    --font-color-secondary: #22577a;
-    --backup-color: #eae8ff;
+    --primary: #7FB7A3;   /* sage green */
+    --secondary: #F3F7F5;
+    --text-dark: #2E3A3A;
+    }
+
+body{
+    background-color: var(--primary);
+    color: var(--text-dark);
 }
 
 header {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 80px;
 }
 
 header .button{
@@ -25,21 +30,29 @@ header .button{
     text-decoration: none;
     font-size: 20px;
     margin: 10px;
-    background-color: brown;
-    border-radius: 100px;
+    background-color: #4F8F7A;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    border-radius: 999px;
     color: white;
     display: inline-block;
     padding: 15px 20px;
+    transition: background-color 0.2s ease,
+              transform 0.15s ease,
+              box-shadow 0.15s ease;
+
 }
 
 header .button:hover {
-    background-color: aqua;
+    background-color:#7FB7A3;  /* slightly darker sage */
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 main{
     display: flex;
     align-items: center;
     flex-direction: column;
+    
 }
 
 main .hobbies{
@@ -50,14 +63,20 @@ main .hobbies{
     gap: 50px;
     margin: 50px;
     padding: 50px;
+    color: #1F2F2A;
+}
+
+main .hobbies p{
+    font-size: 23px;
+ 
 }
 
 main .hobbies h2{
-    font-size: 35px;
+    font-size: 50px;
 }
 
 main .hobbies h3{
-    font-size: 25px;
+    font-size: 40px;
 }
 
 main .books{
